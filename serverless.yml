@@ -1,0 +1,17 @@
+service: hydronudge
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  handler:
+    handler: src/index.handler
+    events:
+      - httpApi:
+          method: GET
+          path: /plant
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript

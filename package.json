@@ -1,0 +1,23 @@
+{
+  "name": "hydronudge",
+  "version": "1.0.0",
+  "description": "the secret to happier plants",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && sls offline"
+  },
+  "author": "John Paulus Francia, Sierra Chapman",
+  "license": "None",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/node": "^20.3.3",
+    "prettier": "^2.8.8",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0"
+  }
+}
