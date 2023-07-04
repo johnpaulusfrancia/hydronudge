@@ -1,5 +1,6 @@
-//@ts-ignore
-export const handler = async (event) => {
+import { Handler } from "aws-lambda";
+
+export const handler: Handler = async (event) => {
   let responseCode = 200;
   console.log("request: " + JSON.stringify(event));
 
